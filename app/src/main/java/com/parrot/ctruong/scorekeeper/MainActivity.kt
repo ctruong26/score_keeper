@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         score_blue.setOnClickListener {
             j++
-            score_num_blue.update(i.toString())
+            score_num_blue.update(j.toString())
             round++
             round_number.update(round.toString())
         }
@@ -32,6 +32,9 @@ class MainActivity : AppCompatActivity() {
             i = 0
             j = 0
             round = 0
+            score_num_red.update(i.toString())
+            score_num_blue.update(j.toString())
+            round_number.update(round.toString())
         }
     }
 
